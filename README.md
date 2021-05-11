@@ -3,7 +3,7 @@
 ## Use case
 - 'strapi-provider-upload-local' is in use for uploading assets via ``Media Library`` in Strapi
 - the need for configurable cache-control HTTP response headers (e.g. ``cache-control: max-age=1234``) + [ETag HTTP response header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) for each asset
-- more information and differences between ``koa-static`` (used in 'strapi-provider-upload-local') and ``koa-static-cache`` (used in this middleware-plugin) can be found [here](['strapi-provider-upload-local'](https://github.com/koajs/static-cache))
+- more information and differences between ``koa-static`` (used in 'strapi-provider-upload-local') and ``koa-static-cache`` (used in this middleware-plugin) can be found [here](https://github.com/koajs/static-cache)
 
 ## Installing
 Using npm
