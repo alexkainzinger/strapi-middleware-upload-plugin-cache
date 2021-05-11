@@ -37,7 +37,6 @@ module.exports = ({ env }) => ({
     }
   }
 });
-
 ```
 
 Starting Strapi in dev-mode should log the following:
@@ -63,7 +62,6 @@ module.exports = ({ env }) => ({
     }
   }
 });
-
 ```
 
 
