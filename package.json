@@ -1,37 +1,44 @@
 {
   "name": "strapi-middleware-upload-plugin-cache",
-  "version": "1.1.1",
-  "description": "Adds middleware for caching uploaded assets when using strapi-provider-upload-local",
+  "version": "2.0.0",
+  "description": "Adds middleware for caching uploaded assets when using @strapi/provider-upload-local",
+  "license": "MIT",
+  "author": {
+    "name": "Alexander Kainzinger",
+    "email": "office@kainzinger.dev",
+    "url": "https://kainzinger.dev"
+  },
+  "maintainers": [
+    {
+      "name": "Alexander Kainzinger",
+      "email": "office@kainzinger.dev",
+      "url": "https://kainzinger.dev"
+    }
+  ],
   "keywords": [
     "strapi",
     "cache",
     "uploads"
   ],
-  "main": "./lib/index.js",
-  "directories": {
-    "lib": "lib"
+  "strapi": {
+    "name": "upload-plugin-cache",
+    "description": "Adds middleware for caching uploaded assets when using @strapi/provider-upload-local",
+    "kind": "plugin"
   },
-  "files": [
-    "/lib"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "koa-range": "^0.3.0",
+    "koa-static-cache": "^5.1.4",
+    "lru-cache": "^7.4.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexkainzinger/strapi-middleware-upload-plugin-cache.git"
   },
-  "author": "Alexander Kainzinger",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/alexkainzinger/strapi-middleware-upload-plugin-cache/issues"
   },
-  "homepage": "https://github.com/alexkainzinger/strapi-middleware-upload-plugin-cache#readme",
-  "dependencies": {
-    "koa-range": "^0.3.0",
-    "koa-static-cache": "^5.1.4",
-    "lodash": "^4.17.20",
-    "lru-cache": "^6.0.0"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/alexkainzinger/strapi-middleware-upload-plugin-cache#readme"
 }
