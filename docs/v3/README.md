@@ -7,23 +7,23 @@
 
 ## Installing
 
-### For Strapi 3
-Version 2.X.X+ of this library is **NOT** compatible with Strapi v3!
-
-Please make sure to check out the [Strapi v3 Docs](docs/v3/README.md) for the installation & setup.
-
 ### For Strapi 4
+Please make sure to check out the [Strapie v4 Docs](README.md) for the installation & setup.
+
+
+### For Strapi 3
 Using npm
 
 ```
-npm install strapi-middleware-upload-plugin-cache
+npm install --save strapi-middleware-upload-plugin-cache@1
 ```
 
 Using yarn
 
 ```
-yarn add strapi-middleware-upload-plugin-cache
+yarn add strapi-middleware-upload-plugin-cache@1
 ```
+
 
 ## Setup
 For Strapi, add a ``plugins.js`` file within the config folder
