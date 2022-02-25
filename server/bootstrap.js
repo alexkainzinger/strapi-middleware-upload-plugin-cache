@@ -1,6 +1,6 @@
 'use strict';
 
-const uploadCacheMiddleware = require('./middlewares/middleware');
+const uploadCacheMiddleware = require('./middlewares');
 
 module.exports = async ({ strapi }) => {
   uploadCacheMiddleware({ strapi });

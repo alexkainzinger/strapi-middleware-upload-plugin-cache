@@ -8,7 +8,7 @@
 ## Installing
 
 ### For Strapi 4
-Please make sure to check out the [Strapie v4 Docs](README.md) for the installation & setup.
+Please make sure to check out the [Strapi v4 Docs](../../README.md) for the installation & setup.
 
 
 ### For Strapi 3
