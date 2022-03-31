@@ -26,22 +26,25 @@ yarn add strapi-middleware-upload-plugin-cache
 ```
 
 ## Setup
-For Strapi, add a ``plugins.js`` file within the config folder
+For Strapi, add a ``middlware.js`` file within the config folder (if you do not already have an exisiting config/middleware.js)
 
 e.g.
 ```
-touch config/plugins.js
+touch config/middleware.js
 ```
 
 containing
 
 ```
 module.exports = {
-  "upload-plugin-cache": {
-    enabled: true,
-    config: {
+  settings: {
+    "upload-plugin-cache": {
+      enabled: true,
       maxAge: 86_400_000,
-    },
+      config: {
+        maxAge: 86_400_000,
+      },
+    }
   }
 };
 ```
@@ -58,15 +61,17 @@ With the option ``dynamic: true`` files which are not cached on initializations 
 
 ```
 module.exports = {
-  "upload-plugin-cache": {
-    enabled: true,
-    config: {
-      maxAge: 86_400_000,
-      dynamic: true,
-      lruCache: {
-        max: 1000
+  settings: {
+    "upload-plugin-cache": {
+      enabled: true,
+      config: {
+        maxAge: 86_400_000,
+        dynamic: true,
+        lruCache: {
+          max: 1000
+        },
       },
-    },
+    }
   }
 };
 ```
