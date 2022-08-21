@@ -33,7 +33,7 @@ module.exports = ({ strapi }) => {
     {
       method: "GET",
       path: UPLOAD_PATH,
-      handler: [range, staticCache(strapi.dirs.public, { ...options, files })],
+      handler: [range, staticCache(strapi.dirs.static.public, { ...options, files })],
       config: { auth: false },
     },
   ]);
