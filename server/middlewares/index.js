@@ -29,11 +29,16 @@ module.exports = ({ strapi }) => {
     `Middleware initialized for endpoint='${UPLOAD_PATH}' [maxAge=${options.maxAge}]`
   );
 
+  const publicDir =
+    typeof strapi.dirs.static === "object"
+      ? strapi.dirs.static.public // Strapi 4.3+
+      : strapi.dirs.public; // Strapi < 4.3
+
   strapi.server.routes([
     {
       method: "GET",
       path: UPLOAD_PATH,
-      handler: [range, staticCache(strapi.dirs.public, { ...options, files })],
+      handler: [range, staticCache(publicDir, { ...options, files })],
       config: { auth: false },
     },
   ]);
