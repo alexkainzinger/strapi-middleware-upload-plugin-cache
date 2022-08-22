@@ -1,6 +1,6 @@
 {
   "name": "strapi-middleware-upload-plugin-cache",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Adds middleware for caching uploaded assets when using @strapi/provider-upload-local",
   "license": "MIT",
   "author": {
